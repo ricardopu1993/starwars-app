@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'StarWars-App'`, () => {
+  it(`should have as title 'StarApp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('StarWars-App');
+    expect(app.title).toEqual('StarApp');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('StarWars-App app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('StarApp app is running!');
   });
 });

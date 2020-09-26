@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+table {
+    text-align: center;     
+}
+
+.container {
+    background-image: url(../src/assets/backgroundStars.jpg);
+    max-width: 1280px !important;
+    border: 2px solid black;
+    height: 73vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90% !important;
+    margin-right: 5% !important;
+    margin-left: 5% !important;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-primary {
+    background-color: #1f2c41d4 !important;
+    border-color: #1f2c41d4 !important;
+}
+
+.btn-primary:hover {
+    background-color: #969ca6d4 !important;
+}
+
