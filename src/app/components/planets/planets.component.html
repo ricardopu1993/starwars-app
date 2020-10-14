@@ -1,0 +1,74 @@
+<app-header></app-header>
+<div class="container flex-row">
+    <div class="pagination flex-row">
+        <div class="paginationMain flex-column">
+            <button [ngClass]="{'selectedButton':actualPage2 == true}" class="btn btn-primary" (click)="getOtherPage(1)">1</button>
+            <button class="btn btn-primary" (click)="getOtherPage(2)">2</button>
+            <button class="btn btn-primary" (click)="getOtherPage(3)">3</button>
+            <button class="btn btn-primary" (click)="getOtherPage(4)">4</button>
+            <button class="btn btn-primary" (click)="getOtherPage(5)">5</button>
+            <button class="btn btn-primary" (click)="getOtherPage(6)">6</button>
+            <button class="btn btn-primary" (click)="getOtherPage(7)">7</button>
+        </div>
+        <div  class="paginationChild flex-column">
+            <button *ngFor="let planet of data; index as i; first as isFirst" (click)="select(planet)" class="btn btn-primary">{{planet.name}}</button>
+        </div>
+    </div>
+
+    <div class="planet flex-column">
+        <div class="imagePlanet">
+            <div id="planet" class="picture">
+
+            </div>
+        </div>
+        <div class="namePlanet flex-row">
+            {{select_data.name}}
+        </div>
+    </div>
+
+    <div class="tablePlanet flex-column">
+        <div class="infoTable">
+            <table class="table table-sm table-bordered table-hover">
+                <tbody>
+                    <tr>
+                        <td>Rotation Period</td>
+                        <td>{{select_data.rotation_period}}</td>
+                    </tr>
+                    <tr>
+                        <td>Orbital Period</td>
+                        <td>{{select_data.orbital_period }}</td>
+                    </tr>
+                    <tr>
+                        <td>Population</td>
+                        <td>{{select_data.population}}</td>
+                    </tr>
+                    <tr>
+                        <td>Surface Water</td>
+                        <td>{{select_data.surface_water}}</td>
+                    </tr>
+                    <tr>
+                        <td>Diameter</td>
+                        <td>{{select_data.diameter}}</td>
+                    </tr>
+                    <tr>
+                        <td>Climate</td>
+                        <td>{{select_data.climate}}</td>
+                    </tr>
+                    <tr>
+                        <td>Gravity</td>
+                        <td>{{select_data.gravity}}</td>
+                    </tr>
+                    <tr>
+                        <td>Terrain</td>
+                        <td>{{select_data.terrain}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="buttonsTable flex-row">
+            <button routerLink="/films" class="btn btn-primary">Films</button>
+            <button routerLink="/species" class="btn btn-primary">Residents</button>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

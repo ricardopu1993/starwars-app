@@ -1,0 +1,80 @@
+.buttonsTable {
+    justify-content: space-around;
+    background-color: #0e61c0ab;
+    border-radius: 1px 1px 14px 14px;
+    border: 2px solid #0e61c061;
+    height: 53px;
+    border-top: none;
+}
+
+.btn-primary {
+    height: 40px;
+    width: 100px;
+    background-color: #1f2c41d4;
+}
+
+.picture {
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    border-radius: 167px;
+}
+
+.namePlanet {
+    justify-content: center;
+}
+
+.planet {
+    height: 80%;
+    justify-content: space-around;
+}
+
+.paginationMain {
+    justify-content: center;
+}
+
+.paginationMain button{
+    height: 57px;
+    width: 50px;
+}
+
+tbody {
+    background-color: white;
+}
+
+.namePlanet {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: x-large;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.infoTable {
+    height: 346px;
+    width: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e61c0ab;
+    border-radius: 14px 14px 1px 1px;
+    border: 2px solid #0e61c061;
+    outline: none;
+    border-bottom: none;
+}
+
+table {
+    height: 300px;
+    max-height: 300px;
+    width: 308px;
+}
+
+.pagination .btn-primary{
+    border: 2px solid #000000 !important;
+    outline: none;
+}
+
+.selectedButton {
+    backgrund-color: blue !important;
+}
