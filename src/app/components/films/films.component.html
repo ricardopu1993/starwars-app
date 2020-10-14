@@ -1,0 +1,57 @@
+<app-header></app-header>
+
+<div class="container">
+
+  <div class="containerGrid">
+    
+      <div *ngFor="let film of films; index as i" class="containerItem miniature-images">
+          <img src="{{image_base_name.concat(film.title) }}.jpg"  alt="{{film.title}}"  (click)="changeItem(film, $event)" width="90" height="90">
+      </div>
+
+  </div>
+
+  <div class="containerImage">
+    <img src="{{image_base_name.concat(select_data.title)}}.jpg" class="img-thumbnail img-fluid" alt="{{select_data.title}}" width="300" height="300" id="show_image">
+    <h3>{{select_data.title}}</h3>
+  </div>
+
+  <div class="containerTable">
+    <div class="table-responsive">
+      <table class="table table-sm table-bordered table-hover">
+          <tbody>
+              <tr>
+                  <td>Director</td>
+                  <td>{{select_data.director}}</td>
+              </tr>
+              <tr>
+                  <td>Producer</td>
+                  <td>{{select_data.producer}}</td>
+              </tr>
+              <tr>
+                  <td>Relase Date</td>
+                  <td>{{select_data.release_date}}</td>
+              </tr>
+              <tr>
+                  <td colspan="2" >Opening Crawl</td>
+              </tr>
+              <tr>
+                <td colspan="2" >
+                  <p>{{select_data.opening_crawl}}</p>
+                </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  </div>
+
+  <div class="containerButtons">
+    <button routerLink="/planets" class="btn btn-primary">Planets</button>
+    <button routerLink="/people" class="btn btn-primary">Characters</button>
+    <button routerLink="/species" class="btn btn-primary">Species</button>
+    <button routerLink="/starShips" class="btn btn-primary">StarShips</button>
+    <button routerLink="/vehicles" class="btn btn-primary">Vehicles</button>
+
+  </div>
+
+</div>
+<app-footer></app-footer>

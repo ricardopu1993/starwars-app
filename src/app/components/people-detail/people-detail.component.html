@@ -1,0 +1,76 @@
+<app-header></app-header>
+
+<div class="container flex-column">
+    <div class="containerPeople flex-row">
+        <div class="images">
+            <div class="miniature-images">
+                <img src="{{image_base_name.concat(select_data.name)}}-01.jpg" class="img-thumbnail img-fluid" alt="{{select_data.name}}" width="120" height="120" (click)="changeImage($event)">
+            </div>
+
+            <div class="miniature-images">
+                <img src="{{image_base_name.concat(select_data.name)}}-02.jpg" class="img-thumbnail img-fluid" alt="{{select_data.name}}" width="120" height="120" (click)="changeImage($event)">
+            </div>
+
+            <div class="miniature-images">
+                <img src="{{image_base_name.concat(select_data.name)}}-03.jpg" class="img-thumbnail img-fluid" alt="{{select_data.name}}" width="120" height="120" (click)="changeImage($event)">
+            </div>
+        </div>
+
+        <div class="image">
+            <div class="card">
+                <img src="{{image_base_name.concat(select_data.name)}}-01.jpg" class="img-thumbnail img-fluid" alt="{{select_data.name}}" width="380" height="230" id="show_image">
+                <div class="card-body">
+                    <p class="card-title">{{select_data.name}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tableContainer flex-row">
+            <div class="table-responsive">
+                <table class="table table-sm table-bordered table-hover">
+                    <tbody>
+                        <tr>
+                            <td>Height</td>
+                            <td>{{select_data.height}}</td>
+                        </tr>
+                        <tr>
+                            <td>Mass</td>
+                            <td>{{select_data.mass}}</td>
+                        </tr>
+                        <tr>
+                            <td>Hair Color</td>
+                            <td>{{select_data.hair_color}}</td>
+                        </tr>
+                        <tr>
+                            <td>Skin Color</td>
+                            <td>{{select_data.skin_color}}</td>
+                        </tr>
+                        <tr>
+                            <td>Eye Color</td>
+                            <td>{{select_data.eye_color}}</td>
+                        </tr>
+                        <tr>
+                            <td>Birth Year</td>
+                            <td>{{select_data.birth_year}}</td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>{{select_data.gender}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="containerButtons flex-column">
+            <button routerLink="/home" class="btn btn-primary">Home</button>
+            <button routerLink="/films" class="btn btn-primary">Films</button>
+            <button routerLink="/species" class="btn btn-primary">Species</button>
+            <button routerLink="/starShips" class="btn btn-primary">StarShips</button>
+            <button routerLink="/vehicles" class="btn btn-primary">Vehicles</button>
+        
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

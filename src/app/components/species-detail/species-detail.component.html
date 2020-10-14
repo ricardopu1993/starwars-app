@@ -1,0 +1,63 @@
+<app-header></app-header>
+
+<div class="container flex-column">
+  <div class="containerspecie flex-row">
+    <div class="image">
+      <div class="card">
+        <img src="{{image_base_name.concat(select_data.name)}}.jpg" class="img-thumbnail img-fluid" alt="{{select_data.name}}" >
+      </div>
+    </div>
+
+    <div class="tableContainer flex-row">
+      <div class="table-responsive">
+        <table class="table table-sm table-bordered table-hover">
+          <tbody>
+            <tr>
+                <td>Name</td>
+                <td>{{ select_data.name }}</td>
+            </tr>
+            <tr>
+              <td>Classification</td>
+              <td>{{ select_data.classification }}</td>
+            </tr>
+            <tr>
+              <td>Designation</td>
+              <td>{{ select_data.designation }}</td>
+            </tr>
+            <tr>
+              <td>Average Height</td>
+              <td>{{ select_data.average_height }}</td>
+            </tr>
+            <tr>
+              <td>Skin Color</td>
+              <td>{{ select_data.skin_colors }}</td>
+            </tr>
+            <tr>
+              <td>Eye Color</td>
+              <td>{{ select_data.eye_colors }}</td>
+            </tr>
+            <tr>
+              <td>Hair Colors</td>
+              <td>{{ select_data.hair_colors }}</td>
+            </tr>
+            <tr>
+              <td>Average Lifespan</td>
+              <td>{{ select_data.average_lifespan }}</td>
+            </tr>
+            <tr>
+              <td>Language</td>
+              <td>{{ select_data.language }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="containerButtons flex-column">
+      <button class="btn btn-primary">Home</button>
+      <button class="btn btn-primary">People</button>
+      <button class="btn btn-primary">Films</button>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

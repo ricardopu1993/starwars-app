@@ -22,7 +22,7 @@ export class ApiService {
    * @param url si se envia url seria para la página siguiente
    */
   public getAllPeople(url: string = ''): Observable<Response> {
-    url = url === '' ? "http://swapi.py4e.com/api/people/" : url;
+    url = url === '' ? "https://swapi.dev/api/people/" : url;
     return this.httpService.get<Response>(url).pipe(
       map(data => {
         data.results = data.results.map(data => new People().deserialize(data))
@@ -36,7 +36,7 @@ export class ApiService {
    * @param id identificador
    */
   public getPeopleId(id: string): Observable<People> {
-    let url = "http://swapi.py4e.com/api/people/" + id;
+    let url = "https://swapi.dev/api/people/" + id;
     return this.httpService.get<People>(url).pipe(
       map(data => new People().deserialize(data))
     );
@@ -47,7 +47,7 @@ export class ApiService {
    * @param url si se envia url seria para la página siguiente
    */
   public getAllPlanets(url: string = ''): Observable<Response> {
-    url = url == '' ? "http://swapi.py4e.com/api/planets/" : url;
+    url = url == '' ? "https://swapi.dev/api/planets/" : url;
 
     return this.httpService.get<Response>(url).pipe(
       map(data => {
@@ -62,7 +62,7 @@ export class ApiService {
    * @param id identificador
    */
   public getPlanetId(id: string): Observable<Planets> {
-    let url = "http://swapi.py4e.com/api/planets/" + id;
+    let url = "https://swapi.dev/api/planets/" + id;
     return this.httpService.get<Response>(url).pipe(
       map(data => new Planets().deserialize(data))
     );
@@ -73,7 +73,7 @@ export class ApiService {
    * @param url si se envia url seria para la página siguiente
    */
   public getAllFilms(url: string = ''): Observable<Response> {
-    url = url == '' ? "http://swapi.py4e.com/api/films/" : url;
+    url = url == '' ? "https://swapi.dev/api/films/" : url;
 
     return this.httpService.get<Response>(url).pipe(
       map(data => {
@@ -88,7 +88,7 @@ export class ApiService {
    * @param id identificador
    */
   public getFilmId(id: string): Observable<Films> {
-    let url = "http://swapi.py4e.com/api/films/" + id;
+    let url = "https://swapi.dev/api/films/" + id;
     return this.httpService.get<Films>(url).pipe(
       map(data => new Films().deserialize(data))
     );
@@ -99,7 +99,7 @@ export class ApiService {
    * @param url si se envia url seria para la página siguiente
    */
   public getAllSpecies(url: string = ''): Observable<Response> {
-    url = url == '' ? "http://swapi.py4e.com/api/species/" : url;
+    url = url == '' ? "https://swapi.dev/api/species/" : url;
 
     return this.httpService.get<Response>(url).pipe(
       map(data => {
@@ -114,7 +114,7 @@ export class ApiService {
    * @param id identificador
    */
   public getSpecieId(id: string): Observable<Species> {
-    let url = "http://swapi.py4e.com/api/species/" + id;
+    let url = "https://swapi.dev/api/species/" + id;
     return this.httpService.get<Species>(url).pipe(
       map(data => new Species().deserialize(data))
     );
@@ -125,7 +125,7 @@ export class ApiService {
    * @param url si se envia url seria para la página siguiente
    */
   public getAllVehicles(url: string = ''): Observable<Response> {
-    url = url == '' ? "http://swapi.py4e.com/api/vehicles/" : url;
+    url = url == '' ? "https://swapi.dev/api/vehicles/" : url;
 
     return this.httpService.get<Response>(url).pipe(
       map(data => {
@@ -140,7 +140,7 @@ export class ApiService {
    * @param id identificador
    */
   public getVehicleId(id: string): Observable<Vehicles> {
-    let url = "http://swapi.py4e.com/api/vehicles/" + id;
+    let url = "https://swapi.dev/api/vehicles/" + id;
     return this.httpService.get<Vehicles>(url).pipe(
       map(data => new Vehicles().deserialize(data))
     );
@@ -151,7 +151,7 @@ export class ApiService {
    * @param url si se envia url seria para la página siguiente
    */
   public getAllStarships(url: string = ''): Observable<Response> {
-    url = url == '' ? "http://swapi.py4e.com/api/starships/" : url;
+    url = url == '' ? "https://swapi.dev/api/starships/" : url;
 
     return this.httpService.get<Response>(url).pipe(
       map(data => {
@@ -166,7 +166,7 @@ export class ApiService {
    * @param id identificador
    */
   public getStarShipId(id: string): Observable<Starships> {
-    let url = "http://swapi.py4e.com/api/starships/" + id;
+    let url = "https://swapi.dev/api/starships/" + id;
     return this.httpService.get<Starships>(url).pipe(
       map(data => new Starships().deserialize(data))
     );

@@ -1,0 +1,53 @@
+.carouselImages {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.carouselItem {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.carouselItem:nth-child(1),.carouselItem:nth-child(9) {
+  height: 80px;
+  width: 50px;
+}
+
+.carouselItem:nth-child(2),.carouselItem:nth-child(8) {
+  height: 120px;
+  width: 80px;
+}
+
+.carouselItem:nth-child(3),.carouselItem:nth-child(7) {
+  height: 180px;
+  width: 120px;
+}
+
+.carouselItem:nth-child(4),.carouselItem:nth-child(6) {
+  background-image: url('../../../assets/Images/species/Droid.jpg');
+  background-size: 220px 160px;
+  height: 220px;
+  width: 160px;
+}
+
+.carouselItem:nth-child(5) {
+  background-image: url('../../../assets/Images/starships/Millennium\ Falcon.jpg');
+  background-size: 300px 300px;
+  opacity: 300;
+  height: 300px;
+  width: 300px;
+  forward{position: absolute;z-index: 5px;;}
+}
+
+.miniImages {
+  width: 220px;
+  justify-content: space-around;
+}
+
+.miniImagesItem {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 65px;
+  width: 50px;
+}

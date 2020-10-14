@@ -1,0 +1,135 @@
+.containerImage h3{
+    color: white;
+    text-align: center;
+}
+
+.container .containerGrid {
+    max-height: -webkit-fill-available;
+    width: 256px;
+    grid-template-columns: 25px 88px 25px 88px 25px;
+    grid-template-rows: 15px 100px 11px 100px 11px 100px 11px 100px 15px;
+    display: grid;
+}
+
+
+.containerGrid .containerItem {
+    border: 2px solid black;
+    width: 89px;
+    height: 87px;
+}
+
+.containerGrid .containerItem:nth-child(1){
+    background-size: 89px 78px;
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 2;
+}
+
+.containerGrid .containerItem:nth-child(2){
+    grid-column-start: 4;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 2;
+}
+
+.containerGrid .containerItem:nth-child(3){
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 4;
+}
+
+.containerGrid .containerItem:nth-child(4){
+    grid-column-start: 4;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 4;
+}
+
+.containerGrid .containerItem:nth-child(5){
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 6;
+}
+
+.containerGrid .containerItem:nth-child(6){
+    grid-column-start: 4;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 6;
+}
+
+.containerGrid .containerItem:nth-child(7){
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 8;
+}
+
+
+.containerImage {
+    border: 2px solid #1f2c41d4;
+    height: 395px;
+    width: auto;
+    border-radius: 15px;
+    background-color: #1f2c41d4;
+}
+
+.containerImage img{
+    padding: 3px;
+    background-color: #1f2c41d4;
+    border: none;
+    max-width: 95%;
+    margin-left: 2.5%;
+    height: -webkit-fill-available;
+    border-radius: 25px;
+}
+
+.containerTable {
+    height: 422px;
+    width: 341px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e61c0ab;
+    border-radius: 14px;
+    border: 2px solid #0e61c061;
+}
+
+.containerGrid img:hover{
+    cursor:pointer;
+}
+
+.containerGrid {
+    background-color: #1f2c41d4;
+    border-radius: 17px;
+    border: 2px solid #1f2c41d4;
+}
+
+.table-responsive {
+    height: 397px;
+    width: 300px;
+}
+
+table {
+    background-color: white;
+}
+
+.containerButtons {
+    height: 400px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn-primary {
+    height: 70px;
+}
+
+.btn-primary:hover {
+    height: 70px;
+}

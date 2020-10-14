@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.opcionsMenu {
+    height: 260px;
+    width: 100%;
+    margin-bottom: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.itemMenu {
+    border: 2px solid black;
+    width: 16%;
+    height: auto;
+    border-radius: 35px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #20222E;
+}
+
+.itemMenu label{
+    cursor: pointer;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.opcionsMenu img {
+    max-height: -webkit-fill-available;
+}
+
+.itemMenu .films{
+    color: #f63b45;
+}
+
+.itemMenu .people{
+    color: #01c0af;
+}
+
+.itemMenu .planets{
+    color: #8a82fa;
+}
+
+.itemMenu .species{
+    color: #bc7450;
+}
+
+.itemMenu .starships{
+    color: #4dca62;
+}
+
+.itemMenu .vehicles{
+    color: #4365d2;
+}
